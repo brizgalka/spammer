@@ -1,0 +1,24 @@
+{
+  "version": 2,
+  "dgSpecHash": "zSAve7zp+CNi4344w/Cim7xLUCjZhSSJovA8lYKpzVcQlxdm8Ar2KdmO5+10W8yZLa3rNIPJDA2Cv0NhLeg+JA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Nerovik\\source\\repos\\ConstantKeyEmu\\ConstantKeyEmu\\ConstantKeyEmu.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Nerovik\\.nuget\\packages\\inputsimulator\\1.0.4\\inputsimulator.1.0.4.nupkg.sha512",
+    "C:\\Users\\Nerovik\\.nuget\\packages\\microsoft.netcore.app.runtime.win-x64\\3.1.10\\microsoft.netcore.app.runtime.win-x64.3.1.10.nupkg.sha512",
+    "C:\\Users\\Nerovik\\.nuget\\packages\\microsoft.windowsdesktop.app.runtime.win-x64\\3.1.10\\microsoft.windowsdesktop.app.runtime.win-x64.3.1.10.nupkg.sha512",
+    "C:\\Users\\Nerovik\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.win-x64\\3.1.10\\microsoft.aspnetcore.app.runtime.win-x64.3.1.10.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Пакет \"InputSimulator 1.0.4\" был восстановлен с помощью \".NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8\", а не целевой платформы проекта \".NETCoreApp,Version=v3.1\". Этот пакет может быть не полностью совместим с вашим проектом.",
+      "libraryId": "InputSimulator",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v3.1"
+      ]
+    }
+  ]
+}

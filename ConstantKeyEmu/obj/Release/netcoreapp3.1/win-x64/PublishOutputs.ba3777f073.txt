@@ -1,0 +1,2 @@
+C:\Users\Nerovik\source\repos\ConstantKeyEmu\ConstantKeyEmu\publish\ConstantKeyEmu.pdb
+C:\Users\Nerovik\source\repos\ConstantKeyEmu\ConstantKeyEmu\publish\ConstantKeyEmu.exe

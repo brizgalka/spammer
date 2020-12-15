@@ -1,5 +1,8 @@
 ﻿using System;
+
+// После установки пакета NuGet нужно подключить эту библиотеку.
 using WindowsInput;
+
 using System.Threading;
 
 namespace ConstantKeyEmu
@@ -8,6 +11,7 @@ namespace ConstantKeyEmu
     {
         static void Main()
         {
+            // Чтобы использовать InputSimulator, нужно скачать одноимённый NuGet пакет.
             InputSimulator inputSimulator = new InputSimulator();
             do
             {
@@ -15,6 +19,8 @@ namespace ConstantKeyEmu
                 string text = Console.ReadLine();
                 Console.Write("Введите режим спама (1. По интервалу отпрвки сообщений, 2. По кол-ву сообщений): ");
                 int mode = Convert.ToInt32(Console.ReadLine());
+                
+                // Первый режим спама по КД.
                 if (mode == 1)
                 {
                     Console.Write("Введите интервал отправки сообщений (не рекомендуется указывать меньше 50): ");
@@ -24,6 +30,7 @@ namespace ConstantKeyEmu
                     Console.WriteLine("Чтобы задать новые значения, нажмите INSERT.");
                     while (true)
                     {
+                        // Печатаем сообщения по КД, пока пользователь не выключит это.
                         IntervalSpam(text, interval, inputSimulator);
                         if (inputSimulator.InputDeviceState.IsKeyDown(WindowsInput.Native.VirtualKeyCode.INSERT))
                         {
@@ -36,6 +43,7 @@ namespace ConstantKeyEmu
                         }
                     }
                 }
+                // Второй режим спама по количеству сообщений.
                 else if (mode == 2)
                 {
                     Console.Write("Кол-во сообщений для отправки: ");
@@ -45,6 +53,7 @@ namespace ConstantKeyEmu
                     Console.WriteLine("Чтобы задать новые значения, нажмите INSERT.");
                     while (true)
                     {
+                        // Отправляем сообщения без КД, считая только количество.
                         AmountSpam(text, amount, inputSimulator);
                         if (inputSimulator.InputDeviceState.IsKeyDown(WindowsInput.Native.VirtualKeyCode.INSERT))
                         {
@@ -58,6 +67,7 @@ namespace ConstantKeyEmu
                     }
                 } else
                 {
+                    // В случае, если данный режим отсутвует, то запускаем программу сначала.
                     Console.WriteLine("Данный режим отсутствует. Нажмите любую кнопку, чтобы продолжить.");
                     Console.ReadKey();
                     Console.Clear();
@@ -65,8 +75,10 @@ namespace ConstantKeyEmu
             } while (true) ;
         } 
 
+        // Тот самый спам по КД.
         static void IntervalSpam(string text, int interval, InputSimulator inputSimulator)
         {
+            // Если пользователь нажал END, то мы начинаем строчить сообщения по КД.
             if (inputSimulator.InputDeviceState.IsTogglingKeyInEffect(WindowsInput.Native.VirtualKeyCode.END))
             {
                 inputSimulator.Keyboard.TextEntry($"{text} ");
@@ -75,15 +87,17 @@ namespace ConstantKeyEmu
             }
         }
 
+        // Спам по количеству.
         static void AmountSpam(string text, int amount, InputSimulator inputSimulator)
         {
+            // Если пользователь нажал END, то мы за раз отправляем все сообщения.
             if (inputSimulator.InputDeviceState.IsKeyDown(WindowsInput.Native.VirtualKeyCode.END))
             {
                 for (int i = 0; i < amount; i++)
                 {
                     inputSimulator.Keyboard.TextEntry($"{text} ");
                     inputSimulator.Keyboard.KeyPress(WindowsInput.Native.VirtualKeyCode.RETURN);
-                    Thread.Sleep(50);
+                    Thread.Sleep(70);
                 }
             }
         }
