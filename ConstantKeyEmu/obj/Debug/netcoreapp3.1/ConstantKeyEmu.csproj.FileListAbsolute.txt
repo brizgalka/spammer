@@ -1,0 +1,15 @@
+C:\Users\Nerovik\source\repos\ConstantKeyEmu\ConstantKeyEmu\bin\Debug\netcoreapp3.1\ConstantKeyEmu.exe
+C:\Users\Nerovik\source\repos\ConstantKeyEmu\ConstantKeyEmu\bin\Debug\netcoreapp3.1\ConstantKeyEmu.deps.json
+C:\Users\Nerovik\source\repos\ConstantKeyEmu\ConstantKeyEmu\bin\Debug\netcoreapp3.1\ConstantKeyEmu.runtimeconfig.json
+C:\Users\Nerovik\source\repos\ConstantKeyEmu\ConstantKeyEmu\bin\Debug\netcoreapp3.1\ConstantKeyEmu.runtimeconfig.dev.json
+C:\Users\Nerovik\source\repos\ConstantKeyEmu\ConstantKeyEmu\bin\Debug\netcoreapp3.1\ConstantKeyEmu.dll
+C:\Users\Nerovik\source\repos\ConstantKeyEmu\ConstantKeyEmu\bin\Debug\netcoreapp3.1\ConstantKeyEmu.pdb
+C:\Users\Nerovik\source\repos\ConstantKeyEmu\ConstantKeyEmu\bin\Debug\netcoreapp3.1\WindowsInput.dll
+C:\Users\Nerovik\source\repos\ConstantKeyEmu\ConstantKeyEmu\obj\Debug\netcoreapp3.1\ConstantKeyEmu.csprojAssemblyReference.cache
+C:\Users\Nerovik\source\repos\ConstantKeyEmu\ConstantKeyEmu\obj\Debug\netcoreapp3.1\ConstantKeyEmu.AssemblyInfoInputs.cache
+C:\Users\Nerovik\source\repos\ConstantKeyEmu\ConstantKeyEmu\obj\Debug\netcoreapp3.1\ConstantKeyEmu.AssemblyInfo.cs
+C:\Users\Nerovik\source\repos\ConstantKeyEmu\ConstantKeyEmu\obj\Debug\netcoreapp3.1\ConstantKeyEmu.csproj.CoreCompileInputs.cache
+C:\Users\Nerovik\source\repos\ConstantKeyEmu\ConstantKeyEmu\obj\Debug\netcoreapp3.1\ConstantKeyEmu.csproj.CopyComplete
+C:\Users\Nerovik\source\repos\ConstantKeyEmu\ConstantKeyEmu\obj\Debug\netcoreapp3.1\ConstantKeyEmu.dll
+C:\Users\Nerovik\source\repos\ConstantKeyEmu\ConstantKeyEmu\obj\Debug\netcoreapp3.1\ConstantKeyEmu.pdb
+C:\Users\Nerovik\source\repos\ConstantKeyEmu\ConstantKeyEmu\obj\Debug\netcoreapp3.1\ConstantKeyEmu.genruntimeconfig.cache
